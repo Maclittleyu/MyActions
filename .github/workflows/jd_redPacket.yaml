@@ -6,7 +6,7 @@ name: 全民抢红包
 on:
     workflow_dispatch:
     schedule:
-        - cron: "0 0,8,16 * * *"
+        - cron: "21 0,8,16 * * *"
     watch:
         types: [started]
     repository_dispatch:
@@ -38,4 +38,4 @@ jobs:
                   TG_USER_ID: ${{ secrets.TG_USER_ID }}
                   DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
                   DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-                  SYNCURL: https://gitee.com/lxk0301/scripts/raw/master/d_redPacket.js
+                  SYNCURL: https://github.com/lxk0301/jd_scripts/raw/master/d_redPacket.js
